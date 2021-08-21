@@ -1,29 +1,25 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: #b91450;    ;
+body {
+    background-color: #b91450;
+    ;
 }
 
 h1 {
-    color:white;
+    color: white;
     font-weight: bolder;
 }
 
-/* 
-        =================================================================
-                                    FORM GENERA BIGLIETTO
-        =================================================================
-
-*/
+.show{
+    display: block !important;
+}
 
 #genera-biglietto {
     background-color: white;
-    color:#b91450;
-    padding: 20px;    
+    color: #b91450;
+    padding: 20px;
 }
-
-#genera-biglietto

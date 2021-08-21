@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>js-biglietto-treno-form</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
+    <title>freedom railway</title>
+    <!-- BootstrapCss -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css\style.css">
+    <!-- MyCss -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -29,23 +29,64 @@
                           <input type="number" class="form-control" id="km">
                         </div>
                         <label class="form-label" for="inputGroupSelect01">Fascia di età</label>
-
                         <div class="input-group mb-3">
-                            <select class="form-select" id="inputGroupSelect01">
+                            <select class="form-select" id="adultOrMinor">
                               <option selected>Maggiorenne o minorenne?</option>
-                              <option value="1">Minorenne</option>
-                              <option value="2">Maggiorenne</option>
+                              <option value="under18">Minorenne</option>
+                              <option value="over18">Maggiorenne</option>
                             </select>
                           </div>
-                        <button type="submit" class="btn btn-primary">Genera</button>
+                        <button type="button" class="btn btn-primary"  id="btn-genera" >Genera</button>
                       </form>
                     
                 </div>
+
+        <!-- Il tuo biglietto  -->
+        <div id="your-ticket"  class="d-none">
+          <div class="row  m-5 ">
+            <div class="col text-center text-uppercase p-2">
+                <h1>Il tuo biglietto</h1>
+            </div>
+          </div>
+          <div class="row" id="ticket">
+           
+            <div class="col" >
+                <table style="width: 100%;">
+                  <tr>
+                    <th>Nome </th>
+                    <th>Offerta</th> 
+                    <th>Carrozza</th>
+                    <th>Codice CP</th>
+                    <th>Costo biglietto</th>
+                  </tr>
+                  <tr>
+                    <td id="userName"></td>
+                    <td id="age"></td>
+                    <td id="van"></td>
+                    <td id="idTrain"></td>
+                    <td id="price"></td>
+                  </tr>
+                </table>
+
+               
+                
             </div>
         </div>
-    </div>
-    
-    <!-- JS Bootstrap -->    
+      </div>
+    <!-- Il tuo biglietto > -->
+  </div>
+            </div>
+        </div>
+</div>
+
+
+
+
+    <!-- BootstrapBundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <!-- SweetAlert -->
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Myjs -->
+    <script src="js/main.js"></script>
 </body>
 </html>
