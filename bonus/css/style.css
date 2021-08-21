@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b91450;
+    ;
+}
+
+h1 {
+    color: white;
+    font-weight: bolder;
+}
+
+.show{
+    display: block !important;
+}
+
+#genera-biglietto {
+    background-color: white;
+    color: #b91450;
+    padding: 20px;
+}
