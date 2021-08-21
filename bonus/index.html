@@ -21,15 +21,15 @@
                 <div class="col" id="genera-biglietto">
                     <form id="ticket-form">
                         <div class="mb-3">
-                          <label for="name" class="form-label">Nome</label>
-                          <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+                          <label for="name" class="form-label" >Nome</label>
+                          <input type="text" class="form-control" id="name" aria-describedby="nameHelp" required>
                         </div>
                         <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">Km da percorrere</label>
-                          <input type="number" class="form-control" id="km">
+                          <input type="number" class="form-control" id="km" required>
                         </div>
                         <label class="form-label" for="inputGroupSelect01">Fascia di età</label>
-                        <div class="input-group mb-3">
+                        <div class="input-group mb-3" required>
                             <select class="form-select" id="adultOrMinor">
                               <option selected>Maggiorenne o minorenne?</option>
                               <option value="under18">Minorenne</option>
